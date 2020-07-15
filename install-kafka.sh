@@ -1,4 +1,5 @@
 #/bin/bash!
+./make_swap.sh
 apt-get update 
 yes | apt-get install default-jre
 yes | apt-get install zookeeperd
