@@ -1,0 +1,7 @@
+TEC 
+CHEM 
+SERV 
+IND 
+RET 
+CAR
+
