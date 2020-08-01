@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-# python event_gen.py n_examples speed
-# In[ ]:
-
 
 import sched
 import pandas as pd
@@ -11,16 +6,21 @@ import subprocess
 import time
 import datetime
 from sys import argv
+#python event_gen.py numero_ejemplos velocidad saltar_n
+#los primeros 190 son en el mismo instante
 
 arg2 = int(argv[1])
 #day_fraction = arg2 if arg2 <= 1 else 1/arg2
 relative_speed = argv[2]
+try: skip = int(argv[3])
+except: skip = 1
 
-df = pd.read_csv(os.path.join('data_crunched','trade_data_01-03-2020.csv'),nrows=arg2).rename(columns={'Unnamed: 0':'ind'})
+df = pd.read_csv(os.path.join('data_crunched','trade_data_01-03-2020.csv'),nrows=arg2,skiprows=[i for i in range(1,skip)]).rename(columns={'Unnamed: 0':'ind'})
 #df = df.iloc[:int(df.shape[0]*day_fraction)]
 df.loc[:,'TIME'] = pd.to_datetime(df.TIME)
-df.loc[:,'delta'] = (df.TIME - df.iloc[0].TIME).apply(lambda x: x.seconds/float(relative_speed))
-
+df.loc[:,'delta'] = (df.TIME - df.iloc[0].TIME).apply(lambda x: (x.seconds+x.microseconds/10.0**6)/float(relative_speed))
+if df.shape[0]<55:
+    print(df)
 run_scripts = ['/bin/echo', '', '|', '/opt/kafka/bin/kafka-console-producer.sh', '--broker-list', 'localhost:9092', '--topic', '', '>', '/dev/null']
 
 def exec_thing(string, topic):
@@ -29,7 +29,7 @@ def exec_thing(string, topic):
     print(' '.join(run_scripts))
     # subprocess.Popen(['echo',str(run_scripts)])
     s = subprocess.Popen(' '.join(run_scripts),shell=True)
-    print(s)
+    #print(s)
     return
     
 def create_sched(s, x):
