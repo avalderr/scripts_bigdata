@@ -26,10 +26,10 @@ run_scripts = ['/bin/echo', '', '|', '/opt/kafka/bin/kafka-console-producer.sh',
 def exec_thing(string, topic):
     run_scripts[1] = '"'+string[0]+' '+str(string[1])+ '"'
     run_scripts[7] = topic
-#    print(' '.join(run_scripts))
+    print(' '.join(run_scripts))
     # subprocess.Popen(['echo',str(run_scripts)])
     s = subprocess.Popen(' '.join(run_scripts),shell=True)
- #   print(s)
+    print(s)
     return
     
 def create_sched(s, x):
