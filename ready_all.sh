@@ -9,5 +9,6 @@ source env/bin/activate
 pip install pandas 
 pip install kafka-python
 ./install-streamparse.sh
+./start-storm.sh
 echo 'Esta TODO OK, se puede correr event gen'
 
