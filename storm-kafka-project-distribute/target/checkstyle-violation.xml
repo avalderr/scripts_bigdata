@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.2">
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/trident/TridentKafkaConsumerTopology.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/trident/TridentKafkaClientTopologyNamedTopics.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/trident/TridentKafkaClientTopologyWildcardTopics.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/KafkaSpoutTopologyMainNamedTopics.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/KafkaSpoutTestBolt.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/KafkaSpoutTopologyMainWildcardTopics.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/WordCounter.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/RedisMineBolt.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/PriceCutOffBolt.java">
+</file>
+<file name="/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/bolt/KafkaProducerTopology.java">
+</file>
+</checkstyle>

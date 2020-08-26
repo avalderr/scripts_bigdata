@@ -1,0 +1,12 @@
+#Tue Aug 25 22:00:23 ECT 2020
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/KafkaSpoutTopologyMainWildcardTopics.java=1591746637000
+configuration*?=9C84DF8BC309994B8F6EB67285594315B9035A2A
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/WordCounter.java=1598410441828
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/bolt/KafkaProducerTopology.java=1591746637000
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/trident/TridentKafkaClientTopologyNamedTopics.java=1591746637000
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/KafkaSpoutTestBolt.java=1598409390476
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/PriceCutOffBolt.java=1598375516955
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/trident/TridentKafkaClientTopologyWildcardTopics.java=1591746637000
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/trident/TridentKafkaConsumerTopology.java=1591746637000
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/KafkaSpoutTopologyMainNamedTopics.java=1598410689214
+/home/dell_2/inst/apache-storm-2.2.0/examples/storm-kafka-project-andrea/src/main/java/org/apache/storm/kafka/spout/RedisMineBolt.java=1598312341018
